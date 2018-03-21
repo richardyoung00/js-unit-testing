@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery</title>
+	<style>
+		.main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 10%;
+			font-family: Roboto, sans-serif;
+		}
+		.margin-top {
+			margin-top: 1em;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<label for="name">Enter your name:</label>
+		<input id="name"/>
+		<button id="button" class="margin-top">Say hello</button>
+		<div id="output" class="margin-top"></div>
+	</div>
+
+	<script src="lib/jquery.min.js" ></script>
+	<script src="sayHello.js" ></script>
+</body>
+</html>

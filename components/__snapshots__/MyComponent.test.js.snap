@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `"<div style=\\"display: flex; margin-top: 10%; font-family: Roboto, sans-serif;\\"><label>Enter your name:</label><input><button style=\\"margin-top: 1em;\\">Say hello</button><div style=\\"margin-top: 1em;\\"></div></div>"`;
