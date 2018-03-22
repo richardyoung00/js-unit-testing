@@ -31,7 +31,10 @@ class MyComponent extends Component {
       <div style={pageStyle}>
         <label>Enter your name:</label>
         <input onChange={(e) => this.setState({name: e.target.value})}/>
-        <button style={marginStyle} onClick={() => this.setOutput()}>Say hello</button>
+        <button style={marginStyle}
+                onClick={() => this.setOutput()}>
+          Say hello
+        </button>
         <div style={marginStyle}>{this.state.output}</div>
       </div>
     )

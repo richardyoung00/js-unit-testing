@@ -11,10 +11,23 @@ test('renders correctly', () => {
   expect(component).toMatchSnapshot();
 });
 
+
+
+
+
+
+
+
+
+
 test('enter name and says hello', () => {
   const component = mount(<MyComponent />);
 
-  component.find('input').simulate('change', {target: {value: 'Richard'}});
+  component.find('input')
+    .simulate('change', {
+      target: {value: 'Richard'}
+    });
+
   component.find('button').simulate('click');
 
   expect(component.text()).toContain('Hello Richard');
