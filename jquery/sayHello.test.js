@@ -7,6 +7,7 @@ test('tests some jquery', () => {
 
   $('#name').val('Richard');
   $('#button').click();
+
   const output = $('#output').text();
   expect(output).toBe('Hello Richard')
 });
