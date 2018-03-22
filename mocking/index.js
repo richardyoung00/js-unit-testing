@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const getUserName = () => {
+export const getUserGreeting = () => {
   return axios.get('https://jsonplaceholder.typicode.com/users/1')
-    .then(response => response.data);
+    .then(response => `Hello ${response.data}`);
 };

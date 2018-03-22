@@ -1,14 +1,14 @@
 import axios from 'axios';
-import {getUserName} from './index';
+import {getUserGreeting} from './index';
 
 jest.mock('axios');
 
-test('formats async data correctly', async () => {
+test('greets user by username', async () => {
   axios.get.mockResolvedValue({data: 'Chuck Norris'});
 
-  const result = await getUserName();
+  const greeting = await getUserGreeting();
 
-  expect(result).toBe('Chuck Norris');
+  expect(greeting).toBe('Hello Chuck Norris');
 
   expect(axios.get).toHaveBeenCalledWith('https://jsonplaceholder.typicode.com/users/1')
 });
