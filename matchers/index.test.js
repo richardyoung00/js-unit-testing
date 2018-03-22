@@ -19,9 +19,29 @@ test('adds total of all items in pricelist', () => {
   expect(priceList).toEqual(expectedResult);
 });
 
+
+
+
+
+
+
+
+
+
+
 test('check equality of arrays', () => {
   expect(['a','b','c']).toEqual(['a','b','c']);
 });
+
+
+
+
+
+
+
+
+
+
 
 test('check array contains items', () => {
   expect(['b','a','c']).toEqual(
@@ -29,17 +49,51 @@ test('check array contains items', () => {
   );
 });
 
+
+
+
+
+
+
+
+
+
+
+
 test('check array contains subset', () => {
   expect(['b','a','c']).toEqual(
     expect.arrayContaining(['a'])
   );
 });
 
+
+
+
+
+
+
+
+
+
+
+
 test('check object contains items', () => {
   expect({a: 1, b: 2, c: 3}).toEqual(
     expect.objectContaining({a: 1, b: 2})
   );
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 test('array contains object that has name wally', () => {
   const input = [
@@ -52,6 +106,20 @@ test('array contains object that has name wally', () => {
     expect.objectContaining({name: 'wally'})
   );
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 test('array contains object that contains string with wally', () => {
   const input = [
